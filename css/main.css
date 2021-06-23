@@ -14,7 +14,7 @@
 	color: #333;
 	opacity: 1;
 }
-
+ 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
@@ -289,6 +289,7 @@ sup {
 	height: 64px;
 	border-radius: 11px;
 	background-color: #d46031;
+	background-image: linear-gradient(180.0deg, #f18951 0%, #d46031 100%);
 	transition: all 0.3s;
 	color: #fefefe;
 	text-align: center;
@@ -310,7 +311,7 @@ sup {
 	height: 100%;
 	background-color: #f18951;
 	box-shadow: inset 0 0 18px rgba(245, 176, 139, 0.35);
-	background-image: linear-gradient(to bottom, #f18951 0%, #d46031 100%);
+background-image: linear-gradient(180.0deg, #f18951 0%, #d46031 100%);
 	border-radius: 11px;
 	z-index: -1;
 	transition: all 0.3s;
@@ -330,16 +331,20 @@ sup {
 	border-radius: 11px;
 	transition: all 0.3s;
 }
-.btn-main:hover::after {
-	opacity: 0;
+.btn-main:hover::before {
+	box-shadow: 0 10px 20px rgba(212, 96, 49, 0.9);
+}
+.btn-main_page:hover::before {
+	box-shadow: 0 10px 20px rgba(12, 118, 167, 0.9);
 }
 .btn-main_page {
 	background-color: #0c76a7;
+	background-image: linear-gradient(180.0deg, #1da0dc 0%, #0c76a7 100%);
 }
 .btn-main_page::after {
 	background-color: #1da0dc;
 	box-shadow: inset 0 0 18px rgba(158, 224, 254, 0.35);
-	background-image: linear-gradient(to bottom, #1da0dc 0%, #0c76a7 100%);
+background-image: linear-gradient(180.0deg, #1da0dc 0%, #0c76a7 100%);
 }
 .btn-main_page::before {
 	background-color: #0c76a7;
