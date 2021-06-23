@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.4" />
+	<link rel="stylesheet" href="css/media.css?ver=1.4" />
 </head>
 <body>
 
@@ -1203,7 +1203,7 @@
 						<p>Для получения подробной информации о доме наведите курсор мыши на нужный участок.</p>
 					</div>
 					<div class="interactive-map__image">
-						<img src="img/map.jpg" alt="alt">
+						<img src="img/map2.jpg" alt="alt">
 					</div>
 					<div class="item-interactive item-interactive_1">
 						<div class="item-interactive__number">1</div>
@@ -1215,7 +1215,7 @@
 								<div class="item-interactive__name">Коттедж, 122 м<sup>2</sup></div>
 								<p><strong>Площадь участка: </strong> 250 м<sup>2</sup></p>
 								<p><strong>Площадь дома: </strong> 122 м<sup>2</sup></p>
-								<p><strong>Жилая: </strong> 90 м<sup>2</sup></p>
+								<p><strong>Очередь строительства: </strong> 90 м<sup>2</sup></p>
 							</div>
 						</div>
 					</div>
@@ -1258,17 +1258,17 @@
 					<div class="row">
 						<div class="col-lg-4">
 							<ul class="list-infrastructure">
-								<li><div class="list-infrastructure__number">1</div><p>«Наследие»</p></li>
-								<li><div class="list-infrastructure__number">2</div><p>Школа</p></li>
-								<li><div class="list-infrastructure__number">3</div><p>Детский сад</p></li>
-								<li><div class="list-infrastructure__number">4</div><p>Продуктовый магазин, кафе</p></li>
-								<li><div class="list-infrastructure__number">5</div><p>Трасса «Таврида»</p></li>
-								<li><div class="list-infrastructure__number">6</div><p>Гипермаркет</p></li>
-								<li><div class="list-infrastructure__number">7</div><p>Центр Симферополя <span>(14 км)</span></p></li>
-								<li><div class="list-infrastructure__number">8</div><p>ЖД вокзал <span>(17 км)</span></p></li>
-								<li><div class="list-infrastructure__number">9</div><p>Аэропорт <span>(26)</span></p></li>
-								<li><div class="list-infrastructure__number">10</div><p>Алушта <span>(59 км)</span></p></li>
-								<li><div class="list-infrastructure__number">11</div><p>Ялта <span>(92)</span></p></li>
+								<li id="map_item1"><div class="list-infrastructure__number">1</div><p>«Наследие»</p></li>
+								<li id="map_item2"><div class="list-infrastructure__number">2</div><p>Школа</p></li>
+								<li id="map_item3"><div class="list-infrastructure__number">3</div><p>Детский сад</p></li>
+								<li id="map_item4"><div class="list-infrastructure__number">4</div><p>Продуктовый магазин, кафе</p></li>
+								<li id="map_item5"><div class="list-infrastructure__number">5</div><p>Трасса «Таврида»</p></li>
+								<li id="map_item6"><div class="list-infrastructure__number">6</div><p>Гипермаркет</p></li>
+								<li id="map_item7"><div class="list-infrastructure__number">7</div><p>Центр Симферополя <span>(14 км)</span></p></li>
+								<li id="map_item8"><div class="list-infrastructure__number">8</div><p>ЖД вокзал <span>(17 км)</span></p></li>
+								<li id="map_item9"><div class="list-infrastructure__number">9</div><p>Аэропорт <span>(26)</span></p></li>
+								<li id="map_item10"><div class="list-infrastructure__number">10</div><p>Алушта <span>(59 км)</span></p></li>
+								<li id="map_item11"><div class="list-infrastructure__number">11</div><p>Ялта <span>(92)</span></p></li>
 							</ul>
 						</div>
 						<div class="col-lg-8">
@@ -1696,7 +1696,7 @@
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js"></script>
+<script src="js/common.js?ver=1.4"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script>
 	$(document).ready(function() {
@@ -1766,7 +1766,85 @@
 				iconLayout: 'default#imageWithContent',
 				iconImageHref: 'img/pin.png',
 				hideIconOnBalloonOpen: false,
-			iconImageSize: [40, 52],
+				iconImageSize: [40, 52],
+				iconContentOffset: [14, 8],
+				iconImageOffset: [-20, -52],
+				balloonOffset: [ 0, -52 ]
+			});
+
+			myPlacemark6 = new ymaps.Placemark([44.962150, 34.113513], {
+				balloonContent: '<div class="wrap-map">Гипермаркет</div>',
+				iconContent: '6',
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 52],
+				iconContentOffset: [14, 8],
+				iconImageOffset: [-20, -52],
+				balloonOffset: [ 0, -52 ]
+			});
+
+			myPlacemark7 = new ymaps.Placemark([44.938270, 34.093826], {
+				balloonContent: '<div class="wrap-map">Центр Симферополя</div>',
+				iconContent: '7',
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 52],
+				iconContentOffset: [14, 8],
+				iconImageOffset: [-20, -52],
+				balloonOffset: [ 0, -52 ]
+			});
+
+			myPlacemark8 = new ymaps.Placemark([44.961741, 34.082253], {
+				balloonContent: '<div class="wrap-map">ЖД вокзал</div>',
+				iconContent: '8',
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 52],
+				iconContentOffset: [14, 8],
+				iconImageOffset: [-20, -52],
+				balloonOffset: [ 0, -52 ]
+			});
+
+			myPlacemark9 = new ymaps.Placemark([45.036240, 33.980968], {
+				balloonContent: '<div class="wrap-map">Аэропорт </div>',
+				iconContent: '9',
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 52],
+				iconContentOffset: [14, 8],
+				iconImageOffset: [-20, -52],
+				balloonOffset: [ 0, -52 ]
+			});
+
+			myPlacemark10 = new ymaps.Placemark([44.676411, 34.410129], {
+				balloonContent: '<div class="wrap-map">Алушта </div>',
+				iconContent: '10',
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 52],
+				iconContentOffset: [14, 8],
+				iconImageOffset: [-20, -52],
+				balloonOffset: [ 0, -52 ]
+			});
+
+			myPlacemark11 = new ymaps.Placemark([44.497415, 34.169506], {
+				balloonContent: '<div class="wrap-map">Ялта </div>',
+				iconContent: '11',
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 52],
 				iconContentOffset: [14, 8],
 				iconImageOffset: [-20, -52],
 				balloonOffset: [ 0, -52 ]
@@ -1779,6 +1857,338 @@
 			myMap.geoObjects.add(myPlacemark3);
 			myMap.geoObjects.add(myPlacemark4);
 			myMap.geoObjects.add(myPlacemark5);
+			myMap.geoObjects.add(myPlacemark6);
+			myMap.geoObjects.add(myPlacemark7);
+			myMap.geoObjects.add(myPlacemark8);
+			myMap.geoObjects.add(myPlacemark9);
+			myMap.geoObjects.add(myPlacemark10);
+			myMap.geoObjects.add(myPlacemark11);
+
+			$( ".list-infrastructure li" ).mouseover(function() {
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+			})
+
+
+			$( "#map_item1" ).mouseover(function() {
+				myMap.setCenter([44.999635, 34.188601]);
+				myPlacemark1.balloon.open();
+				myPlacemark1.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item2" ).mouseover(function() {
+				myMap.setCenter([44.999773, 34.181094]);
+				myPlacemark2.balloon.open();
+				myPlacemark2.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item3" ).mouseover(function() {
+				myMap.setCenter([44.995210, 34.184702]);
+				myPlacemark3.balloon.open();
+				myPlacemark3.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item4" ).mouseover(function() {
+				myMap.setCenter([45.002702, 34.183341]);
+				myPlacemark4.balloon.open();
+				myPlacemark4.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item5" ).mouseover(function() {
+				myMap.setCenter([45.007889, 34.190813]);
+				myPlacemark5.balloon.open();
+				myPlacemark5.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item6" ).mouseover(function() {
+				myMap.setCenter([44.962150, 34.113513]);
+				myPlacemark6.balloon.open();
+				myPlacemark6.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item7" ).mouseover(function() {
+				myMap.setCenter([44.938270, 34.093826]);
+				myPlacemark7.balloon.open();
+				myPlacemark7.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item8" ).mouseover(function() {
+				myMap.setCenter([44.961741, 34.082253]);
+				myPlacemark8.balloon.open();
+				myPlacemark8.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item9" ).mouseover(function() {
+				myMap.setCenter([45.036240, 33.980968]);
+				myPlacemark9.balloon.open();
+				myPlacemark9.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item10" ).mouseover(function() {
+				myMap.setCenter([44.676411, 34.410129]);
+				myPlacemark10.balloon.open();
+				myPlacemark10.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			$( "#map_item11" ).mouseover(function() {
+				myMap.setCenter([44.497415, 34.169506]);
+				myPlacemark11.balloon.open();
+				myPlacemark11.options.set({iconImageHref: 'img/pin2.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+			})
+
+			myPlacemark1.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark2.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark3.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark4.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png');
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark5.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png');
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark6.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png');
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark7.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark8.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark9.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark10.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark11.options.set({iconImageHref: 'img/pin.png'});
+			});
+			myPlacemark11.events.add('click', function (e) {
+				e.get('target').options.set('iconImageHref', 'img/pin2.png'); 
+				myPlacemark2.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark6.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark7.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark8.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark9.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark10.options.set({iconImageHref: 'img/pin.png'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin.png'});
+			});
 		}
 	});
 </script> 
