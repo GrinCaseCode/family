@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.9" />
+	<link rel="stylesheet" href="css/media.css?ver=1.9" />
+</head>
+<body>
+
+	<div class="wrapper wrapper_page">
+
+		<header class="header default">
+			<div class="container">
+				<div class="header__wrap">
+					<span class="btn_nav">
+						<span class='sandwich'>
+							<span class='sw-topper'></span>
+							<span class='sw-bottom'></span>
+							<span class='sw-footer'></span>
+						</span>
+					</span>
+					<div class="logo-wrap">
+						<a href="#" class="logo">
+							<img src="img/logo.png" alt="alt">
+						</a>
+						<div class="logo-descr">Коттеджный поселок закрытого типа</div>
+					</div>
+					<div class="location-contact">
+						<img src="img/ic_location.png" alt="alt">
+						<div>
+							<p><strong>7 км</strong> от центра Симферополя</p>
+							<a href="#" class="link-simple">Смотреть на карте</a>
+						</div>
+					</div>
+					<div class="time-contact">
+						<p>Режим работы:</p>
+						<p>Пн-Вс с 9:00-21:00</p>
+					</div>
+					<a href="tel:+79785714826" class="phone-mob"><i class="fas fa-phone"></i></a>
+					<div class="phone-contact">
+						<p><a href="tel:+79785714826" class="phone-main">+7 (978) 571-48-26</a></p>
+						<a href="#callback" class="link-simple fancybox">Вам перезвонить?</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<ul class="menu">
+						<li><a href="#">О Family Club</a></li>
+						<li><a href="#">Наши объекты</a></li>
+						<li><a href="#">Карта поселка</a></li>
+						<li><a href="#">Типы планировок</a></li>
+						<li><a href="#">Условия оплаты</a></li>
+						<li><a href="#">Акции и скидки</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="list-social">
+						<li><a href="#" class="list-social__whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+						<li><a href="#" class="list-social__viber"><i class="fab fa-viber"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="catalog">
+			<div class="container">
+				<div class="title-section">Планировки и цены домов в Family Club</div>
+				<div class="descr-section">Вы можете выбрать, забронировать и купить конкретный дом.</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<a href="#" class="btn-main btn-main_filter">Фильтр <i class="fas fa-filter"></i></a>
+						<div class="sidebar-catalog">
+							<form>
+								<div class="sidebar-catalog__title">Фильтр</div>
+								<div class="sidebar-catalog__name">Тип:</div>
+								<div class="radio-wrap">
+									<div class="item-radio">
+										<label>
+											<input type="radio" checked="checked" name="radio1" />
+											<span>Коттедж</span>
+										</label>
+									</div>
+									<div class="item-radio">
+										<label>
+											<input type="radio" name="radio1" />
+											<span>Таунхаус</span>
+										</label>
+									</div>
+								</div>
+								<div class="sidebar-catalog__name">Цена:</div>
+								<div class="range-catalog range-catalog_price">
+									<input type="text" class="range-catalog__input" value="" />
+								</div>
+								<div class="sidebar-catalog__name">Площадь:</div>
+								<div class="range-catalog range-catalog_area">
+									<input type="text" class="range-catalog__input" value="" />
+								</div>
+								<div class="sidebar-catalog__name">Спальни:</div>
+								<div class="radio-wrap">
+									<div class="item-radio item-radio_min">
+										<label>
+											<input type="radio" checked="checked" name="radio2" />
+											<span>3</span>
+										</label>
+									</div>
+									<div class="item-radio item-radio_min">
+										<label>
+											<input type="radio" name="radio2" />
+											<span>4</span>
+										</label>
+									</div>
+								</div>
+								<div class="sidebar-catalog__name">Этап сдачи:</div>
+								<div class="radio-wrap">
+									<div class="item-radio item-radio_min">
+										<label>
+											<input type="radio" checked="checked" name="radio3" />
+											<span>1</span>
+										</label>
+									</div>
+									<div class="item-radio item-radio_min">
+										<label>
+											<input type="radio" name="radio3" />
+											<span>2</span>
+										</label>
+									</div>
+									<div class="item-radio item-radio_min">
+										<label>
+											<input type="radio" name="radio3" />
+											<span>3</span>
+										</label>
+									</div>
+								</div>
+								<br>
+								<div class="radio-check">
+									<label>
+										<input type="radio" checked="checked" name="radio4" />
+										<span>Без отделки</span>
+									</label>
+								</div>
+								<div class="radio-check">
+									<label>
+										<input type="radio" name="radio4" />
+										<span>С отделкой</span>
+									</label>
+								</div>
+								<div class="sidebar-catalog__buttons">
+									<button class="btn-main btn-main_page">Применить</button>
+									<button class="btn-clear"><i class="far fa-times-circle"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-9 col_pl">
+						<div class="sortings-wrap">
+							<div class="item-select">
+								<select>
+									<option value="1">По цене</option>
+									<option value="1">По цене</option>
+									<option value="1">По цене</option>
+									<option value="1">По цене</option>
+								</select>
+							</div>
+							<div class="item-select">
+								<select>
+									<option value="1">По площади</option>
+									<option value="1">По площади</option>
+									<option value="1">По площади</option>
+									<option value="1">По площади</option>
+								</select>
+							</div>
+						</div>
+						<div class="row row_catalog">
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<span class="item-catalog__value">250</span>
+									</span>
+									<span class="item-catalog__name">Коттедж, 122 м2</span>
+									<span class="line-feature">
+										<strong>Площадь участка:</strong>
+										<span>250 м<sup>2</sup></span>
+									</span>
+									<span class="line-feature">
+										<strong>Количество комнат:</strong>
+										<span>3</span>
+									</span>
+									<span class="line-feature">
+										<strong>Отделка:</strong>
+										<span>чистовая</span>
+									</span>
+									<span class="item-catalog__price">6 000 000 ₽</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<span class="item-catalog__value">250</span>
+									</span>
+									<span class="item-catalog__name">Коттедж, 122 м2</span>
+									<span class="line-feature">
+										<strong>Площадь участка:</strong>
+										<span>250 м<sup>2</sup></span>
+									</span>
+									<span class="line-feature">
+										<strong>Количество комнат:</strong>
+										<span>3</span>
+									</span>
+									<span class="line-feature">
+										<strong>Отделка:</strong>
+										<span>чистовая</span>
+									</span>
+									<span class="item-catalog__price">6 000 000 ₽</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<span class="item-catalog__value">250</span>
+									</span>
+									<span class="item-catalog__name">Коттедж, 122 м2</span>
+									<span class="line-feature">
+										<strong>Площадь участка:</strong>
+										<span>250 м<sup>2</sup></span>
+									</span>
+									<span class="line-feature">
+										<strong>Количество комнат:</strong>
+										<span>3</span>
+									</span>
+									<span class="line-feature">
+										<strong>Отделка:</strong>
+										<span>чистовая</span>
+									</span>
+									<span class="item-catalog__price">6 000 000 ₽</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<span class="item-catalog__value">250</span>
+									</span>
+									<span class="item-catalog__name">Коттедж, 122 м2</span>
+									<span class="line-feature">
+										<strong>Площадь участка:</strong>
+										<span>250 м<sup>2</sup></span>
+									</span>
+									<span class="line-feature">
+										<strong>Количество комнат:</strong>
+										<span>3</span>
+									</span>
+									<span class="line-feature">
+										<strong>Отделка:</strong>
+										<span>чистовая</span>
+									</span>
+									<span class="item-catalog__price">6 000 000 ₽</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<span class="item-catalog__value">250</span>
+									</span>
+									<span class="item-catalog__name">Коттедж, 122 м2</span>
+									<span class="line-feature">
+										<strong>Площадь участка:</strong>
+										<span>250 м<sup>2</sup></span>
+									</span>
+									<span class="line-feature">
+										<strong>Количество комнат:</strong>
+										<span>3</span>
+									</span>
+									<span class="line-feature">
+										<strong>Отделка:</strong>
+										<span>чистовая</span>
+									</span>
+									<span class="item-catalog__price">6 000 000 ₽</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<span class="item-catalog__value">250</span>
+									</span>
+									<span class="item-catalog__name">Коттедж, 122 м2</span>
+									<span class="line-feature">
+										<strong>Площадь участка:</strong>
+										<span>250 м<sup>2</sup></span>
+									</span>
+									<span class="line-feature">
+										<strong>Количество комнат:</strong>
+										<span>3</span>
+									</span>
+									<span class="line-feature">
+										<strong>Отделка:</strong>
+										<span>чистовая</span>
+									</span>
+									<span class="item-catalog__price">6 000 000 ₽</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<span class="item-catalog__value">250</span>
+									</span>
+									<span class="item-catalog__name">Коттедж, 122 м2</span>
+									<span class="line-feature">
+										<strong>Площадь участка:</strong>
+										<span>250 м<sup>2</sup></span>
+									</span>
+									<span class="line-feature">
+										<strong>Количество комнат:</strong>
+										<span>3</span>
+									</span>
+									<span class="line-feature">
+										<strong>Отделка:</strong>
+										<span>чистовая</span>
+									</span>
+									<span class="item-catalog__price">6 000 000 ₽</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<span class="item-catalog__value">250</span>
+									</span>
+									<span class="item-catalog__name">Коттедж, 122 м2</span>
+									<span class="line-feature">
+										<strong>Площадь участка:</strong>
+										<span>250 м<sup>2</sup></span>
+									</span>
+									<span class="line-feature">
+										<strong>Количество комнат:</strong>
+										<span>3</span>
+									</span>
+									<span class="line-feature">
+										<strong>Отделка:</strong>
+										<span>чистовая</span>
+									</span>
+									<span class="item-catalog__price">6 000 000 ₽</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog1.jpg" alt="alt">
+										<span class="item-catalog__value">250</span>
+									</span>
+									<span class="item-catalog__name">Коттедж, 122 м2</span>
+									<span class="line-feature">
+										<strong>Площадь участка:</strong>
+										<span>250 м<sup>2</sup></span>
+									</span>
+									<span class="line-feature">
+										<strong>Количество комнат:</strong>
+										<span>3</span>
+									</span>
+									<span class="line-feature">
+										<strong>Отделка:</strong>
+										<span>чистовая</span>
+									</span>
+									<span class="item-catalog__price">6 000 000 ₽</span>
+								</a>
+							</div>
+						</div>
+						<div class="button-catalog">
+							<a href="#" class="btn-main">Показать еще</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-6">
+						<div class="footer-logo">
+							<a href="#" class="logo">
+								<img src="img/logo2.png" alt="alt">
+							</a>
+							<div class="logo-descr">Коттеджный поселок закрытого типа</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6 col_footer-nav">
+						<ul class="footer-list">
+							<li><a href="#">О Family Club</a></li>
+							<li><a href="#">Карта поселка</a></li>
+							<li><a href="#">Наши объекты</a></li>
+							<li><a href="#">Услуги</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-6 col_footer-nav">
+						<ul class="footer-list">
+							<li><a href="#">Условия оплаты</a></li>
+							<li><a href="#">Акции и скидки</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-6">
+						<div class="footer__right">
+							<div>
+								<p><a href="tel:+79785714826" class="phone-main">+7 (978) 571-48-26</a></p>
+								<a href="#callback" class="link-simple fancybox">Вам перезвонить?</a>
+								<p>Режим работы: </p>
+								<p>Пн-Вс с 9:00-21:00</p>
+							</div>
+							<ul class="list-social">
+								<li><a href="#" class="list-social__whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+								<li><a href="#" class="list-social__viber"><i class="fab fa-viber"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3 col-sm-6">
+							<a href="#">Политика конфиденциальности</a>
+						</div>
+						<div class="col-lg-2 col-sm-6 col_copyright">
+							<p>г. Симферополь © Copyright  2021 г.</p>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="create">Сделано в <img src="img/copy.svg" alt="alt"></div>
+						</div>
+						<div class="col-lg-4 col-sm-6 align_right">
+							<a href="#" class="btn_top"><i class="fa fa-arrow-up"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script> 
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script> 
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.9"></script>
+
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
