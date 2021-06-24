@@ -212,6 +212,27 @@
 	.btn_nav {
 		margin-right: 5px;
 	}
+	.paymnet .tab-container {
+		padding-left: 30px;
+	}
+	.paymnet .checkbox-wrap .checkbox {
+		white-space: normal;
+	}
+	.list-images li {
+		margin-right: 50px;
+	}
+	.catalog .col_pl {
+		padding-left: 15px;
+	}
+	.row_catalog {
+		margin: 0 -10px;
+	}
+	.row_catalog > div {
+		padding: 0 10px;
+	}
+	.item-catalog .line-feature {
+		font-size: 14px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -406,6 +427,41 @@
 	line-height: 25px;
 	padding-bottom: 40px;
 }
+.paymnet .title-section {
+    padding-bottom: 35px;
+    }
+    .payment-block {
+    	margin-top: 25px;
+    }
+    .title-section_tabs {
+    	padding-top: 40px;
+    }
+    .paymnet .tab-container .title-page {
+    	padding-top: 0;
+    	padding-bottom: 20px;
+    }
+    .paymnet .tab-container .block-form {
+    	margin-top: 25px;
+    }
+    .sidebar-catalog {
+    	margin-bottom: 30px;
+    	max-width: 100%;
+    	display: none; 
+    }
+    .btn-clear { 
+    	margin-left: 25px;
+    }
+    .sidebar-catalog__buttons {
+    	justify-content: flex-start;
+    }
+    .btn-main_filter {
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	margin-bottom: 30px;
+    	max-width: 324px;
+    	height: 55px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -653,6 +709,17 @@ padding-bottom: 25px;
     .article li, .article p {
     	margin-bottom: 15px;
     }
+    .list-images li {
+    	margin-top: 15px;
+    }
+    .list-images img {
+    max-width: 120px;
+}
+.paymnet .tab-container .block-form {
+	padding: 0;
+	padding-top: 15px;
+	background: none;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -702,6 +769,7 @@ padding-bottom: 25px;
 	padding: 0 4px;
     font-size: 12px;
     height: 64px;
+    line-height: 16px;
 }
 .tab-container p:first-child {
 	margin-top: 0;
@@ -864,7 +932,7 @@ padding-bottom: 25px;
 	font-size: 25px;
 	color: #2295c9;
 	display: inline-block;
-	margin-right: 15px;
+	margin-right: 15px; 
 	margin-left: auto;
 }
 .steps {
@@ -873,7 +941,7 @@ padding-bottom: 25px;
 }
 .item-interactive__content {
 	left: -97px;
-}
+} 
 .item-interactive__content::after {
 	left: 100px;
 } 
@@ -898,6 +966,62 @@ blockquote {
 	padding: 20px 15px;
 	margin-bottom: 15px;
 }
+.paymnet {
+    padding-top: 34px;
+    padding-bottom: 65px;
+    }
+    .title-page {
+    font-size: 21px;
+    line-height: 26px;
+}
+.paymnet .tab-container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.list-images li {
+    margin-right: 14px;
+}
+.list-images img {
+    max-width: 98px;
+}
+.title-middle {
+    font-size: 18px;
+    line-height: 26px;
+    }
+    .btn-download img {
+    margin-bottom: 3px;
+}
+.paymnet {
+	line-height: 23px;
+}
+.paymnet .title-section {
+    padding-bottom: 17px;
+}
+.catalog .descr-section {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+.jq-selectbox__select-text {
+	padding-right: 40px;
+}
+.jq-selectbox__trigger {
+	width: 25px;
+}
+.catalog {
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+.button-catalog {
+	padding-top: 0;
+}
+.item-catalog__image {
+    height: 200px;
+    margin-bottom: 15px;
+    }
+    .btn-main_filter {
+    	max-width: 294px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -929,6 +1053,12 @@ blockquote {
 @media only screen and (min-width : 992px) {
 .header-bottom {
 	height:initial !important;
+}
+.sidebar-catalog {
+	display: block !important;
+}
+.btn-main_filter {
+	display: none !important;
 }
 }
 

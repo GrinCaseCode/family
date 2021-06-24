@@ -38,6 +38,11 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		
 	});
 
+	$(".btn-main_filter").click(function(e) {
+		e.preventDefault();
+		$(".sidebar-catalog").slideToggle(200);
+	});
+
 
 
 	/*высота блока по экрану*/
@@ -215,13 +220,34 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
 	});
 
+	$(".range-catalog_price .range-catalog__input").ionRangeSlider({
+	type: "double",
+	min: 5500000,
+	max: 10000000,
+	from: 5500000,
+	to: 9500000,
+	postfix: " руб.",
+	prettify_enabled: true,
+});
+
+	$(".range-catalog_area .range-catalog__input").ionRangeSlider({
+	type: "double",
+	min: 125,
+	max: 260,
+	from: 125,
+	to: 250,
+	postfix: " м²",
+	prettify_enabled: true,
+});
+
 	$('.tabs li a').click(function(event) {
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
-		$(".tab-pane").removeClass("active");
+		$(".tab-pane").fadeOut(0);
 		var selectTab = $(this).attr("href");
-		$(selectTab).addClass("active");
+		$(selectTab).fadeIn(200);
+		$('.slider-gallery').slick("reinit");
 	}); 
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
