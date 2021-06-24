@@ -2306,11 +2306,16 @@ color: #000000;
 	opacity: 0;
 }
 .irs--flat .irs-from {
+	visibility: visible !important;
 	left: 0 !important;
 }
 .irs--flat .irs-to {
+	visibility: visible !important;
 	right: 0 !important;
 	left: auto !important;
+}
+.irs-single {
+	visibility: hidden !important;
 }
 .item-radio_min span {
 	width: 39px;
