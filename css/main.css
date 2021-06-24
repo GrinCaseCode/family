@@ -2463,6 +2463,7 @@ width: 100% !important;
 	width: 100%;
 	font-size: 14px;
 	border: 1px solid #ecedef;
+	background-color: #fff;
 	border-radius: 9px;
 }
 .jq-selectbox__dropdown li {
