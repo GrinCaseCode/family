@@ -2557,3 +2557,87 @@ left: 5px;
 .col_pl {
 	padding-left: 0;
 }
+.fancybox-nav span {
+	top: 48.4%;
+    color: #fff !important;
+    border: 3px solid #fff;
+    background-color: #1da0dc;
+    box-shadow: inset 2px 2px 18px rgb(158 224 254 / 55%);
+    background-image: linear-gradient(to bottom, #1da0dc 0%, #0c76a7 100%);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s;
+}
+
+.fancybox-nav {
+	width: 50%;
+}
+.fancybox-nav span {
+	visibility: visible !important;
+	opacity: 1 !important;
+	background-image: none !important;
+}
+.fancybox-nav span::before {
+	    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+        font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+        content: "\f053";
+}
+.fancybox-next span::before {
+	content: "\f054";
+}
+.fancybox-prev {
+    left: 0px;
+}
+.fancybox-next {
+    right: 0px;
+}
+.fancybox-prev span {
+	left: -15px;
+}
+.fancybox-next span {
+	right: -15px;
+}
+.fancybox-skin {
+	padding: 0 !important;
+}
+.fancybox-close {
+	top: 14px;
+	right: 14px;
+	width: 20px;
+	height: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 400;
+	font-size: 21px;
+	border-radius: 50%;
+	background:none !important;
+		color: #1da0dc;
+	transition: all 0.3s;
+}
+.fancybox-close:before {
+	content: "\f057";
+}
