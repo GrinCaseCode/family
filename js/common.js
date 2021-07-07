@@ -25,6 +25,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
+		$(".header").toggleClass("header_menu");
 		if ($(".header-bottom").is(":hidden")) {
 			$(".header-bottom").slideDown(200);
 		} else {
@@ -34,6 +35,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			$(".header-bottom a").click(function() {
 			$(".header-bottom").slideUp(200);
 			$(".sandwich").removeClass("active");
+			$(".header").removeClass("header_menu");
 		});
 		
 	});
@@ -41,6 +43,11 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$(".btn-main_filter").click(function(e) {
 		e.preventDefault();
 		$(".sidebar-catalog").slideToggle(200);
+	});
+
+	$(".title-min_service").click(function(e) {
+		e.preventDefault();
+		$(this).siblings(".row_serv").slideToggle(200);
 	});
 
 
@@ -76,14 +83,10 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			breakpoint: 992,
 			settings: {
 				dots: true,
-				slidesToShow: 2,
-			}
-		},
-		{
-			breakpoint: 768,
-			settings: {
-				dots: true,
-				arrows: true,
+				arrows: false,
+				infinite: true,
+				variableWidth: true,
+				centerMode: true,
 				slidesToShow: 1,
 			}
 		}
@@ -147,22 +150,12 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		{
 			breakpoint: 993,
 			settings: {
-				arrows: true,
-			slidesToShow: 4,
-			}
-		},
-		{
-			breakpoint: 768,
-			settings: {
-				arrows: true,
-			slidesToShow: 2,
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-			arrows: true,
-			slidesToShow: 2,	
+			dots: true,
+				arrows: false,
+				dots: false,
+				infinite: true,
+				variableWidth: true,
+				slidesToShow: 1,
 			}
 		}
 		]
@@ -214,11 +207,47 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		slidesToShow: 1,
 		variableWidth: true,
 		slidesToScroll: 1,
-		asNavFor: '.layout-nav',
+		centerMode: true,
 		touchThreshold: 1000,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
 	});
+
+	$('.slider-news').slick({
+		arrows: false,
+		dots: true,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+			slidesToShow: 1,
+			}
+		}
+		]
+	});
+
+	 $('.row_insta').slick({
+ 	dots: false,
+ 	arrows: false,
+ 	slidesToShow:1,
+ 	variableWidth: true,
+ 	infinite: false,
+ 	arrows: false,
+ 	slidesToScroll: 1,
+ 	mobileFirst: true,
+ 	responsive: [
+ 	{
+ 		breakpoint: 992,
+ 		settings: 'unslick'
+ 	}
+ 	]
+ });
 
 	$(".range-catalog_price .range-catalog__input").ionRangeSlider({
 	type: "double",
