@@ -106,7 +106,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$('.layout-for').slick({
 		arrows: true,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		asNavFor: '.layout-nav',
@@ -126,7 +126,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$('.layout-nav').slick({
 		arrows: false,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		slidesToShow: 8,
 		slidesToScroll: 1,
 		asNavFor: '.layout-for',
