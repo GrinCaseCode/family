@@ -1389,7 +1389,7 @@
 
 	/*adaptive*/
 	.billbord {
-		background-size: 480px auto;
+		background-size: 100% 100%;
 		background-position: center;
 	}
 }
