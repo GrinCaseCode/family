@@ -1390,7 +1390,7 @@
 	/*adaptive*/
 	.billbord {
 		background-image: url(../img/billbord_mob.jpg);
-		background-size: auto 100%;
+		background-size: 480px auto;
 		background-position: center top;
 	}
 }
