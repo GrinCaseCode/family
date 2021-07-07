@@ -153,7 +153,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			dots: true,
 				arrows: false,
 				dots: false,
-				infinite: true,
+				infinite: false,
 				variableWidth: true,
 				slidesToShow: 1,
 			}
