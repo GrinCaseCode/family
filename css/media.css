@@ -718,6 +718,9 @@
 	.slider-for .slick-next {
 		right: 0;
 	}
+	.slider-for .slick-arrow {
+		top: 45%;
+	}
 	.slider-nav {
 		display: none;
 	}
@@ -1010,7 +1013,7 @@
 		background-color: #f8fafc;
 	}
 	.slider-gallery__item {
-		height: 262px;
+		height: 282px;
 	}
 	.container {
 		max-width: 100%;
