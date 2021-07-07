@@ -110,6 +110,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		asNavFor: '.layout-nav',
+		swipe: false,
 		touchThreshold: 1000,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',

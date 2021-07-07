@@ -1013,7 +1013,7 @@
 		background-color: #f8fafc;
 	}
 	.slider-gallery__item {
-		height: 282px;
+		height: 262px;
 	}
 	.container {
 		max-width: 100%;
@@ -1045,6 +1045,11 @@
 	.billbord {
 		background-image: url(../img/billbord_mob.jpg);
 		background-size: 992px auto;
+	}
+	 .slider-for__item img,
+	.slider-gallery__item img {
+		border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
 	}
 }
 
@@ -1195,6 +1200,9 @@
 	/*adaptive*/
 	.billbord {
 		background-size: 100%;
+	}
+		.slider-for__item {
+		height: 280px;
 	}
 }
 
@@ -1395,6 +1403,7 @@
 		background-size: 100% 100%;
 		background-position: center;
 	}
+
 }
 
 
