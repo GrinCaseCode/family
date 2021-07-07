@@ -485,7 +485,7 @@
 		transition: all 0.3s;
 	}
 	.billbord {
-		min-height: 100vh;
+		min-height: calc(100vh - 50px);
 		padding-bottom: 0;
 		padding-top: 159px;
 		position: relative;
