@@ -1164,7 +1164,7 @@
 	.item-advantage__image img {
 		object-position: top;
 	}
-	
+
 	.article h1 {
 		font-size: 24px;
 		line-height: 32px;
@@ -1390,7 +1390,7 @@
 	/*adaptive*/
 	.billbord {
 		background-image: url(../img/billbord_mob.jpg);
-		background-size: 480px auto;
+		background-size: auto 100%;
 		background-position: center top;
 	}
 }
