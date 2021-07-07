@@ -485,7 +485,7 @@
 		transition: all 0.3s;
 	}
 	.billbord {
-		min-height: calc(100vh - 50px);
+		min-height: calc(100vh - 60px);
 		padding-bottom: 0;
 		padding-top: 159px;
 		position: relative;
@@ -1389,9 +1389,8 @@
 
 	/*adaptive*/
 	.billbord {
-		background-image: url(../img/billbord_mob.jpg);
 		background-size: 480px auto;
-		background-position: center top;
+		background-position: center;
 	}
 }
 
