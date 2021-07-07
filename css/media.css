@@ -1191,7 +1191,7 @@
 	}
 	/*adaptive*/
 	.billbord {
-		background-size: 768px auto;
+		background-size: 100%;
 	}
 }
 
