@@ -996,7 +996,8 @@
 		margin-bottom: 20px;
 	}
 	.footer .list-social {
-		width: 45%;
+		width: 50%;
+		padding-left: 15px;
 		margin-top: 0;
 	}
 	.block-help .name-block {
@@ -1046,10 +1047,19 @@
 		background-image: url(../img/billbord_mob.jpg);
 		background-size: 992px auto;
 	}
-	 .slider-for__item img,
+	.slider-for__item img,
 	.slider-gallery__item img {
-		border-bottom-right-radius: 0;
-			border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0; 
+		border-bottom-left-radius: 0;
+	}
+	.advantages {
+		padding-bottom: 37px;
+	}
+	.tab-container {
+		margin-top: 17px;
+	}
+	.about {
+		padding-top: 20px;
 	}
 }
 
@@ -1201,7 +1211,7 @@
 	.billbord {
 		background-size: 100%;
 	}
-		.slider-for__item {
+	.slider-for__item {
 		height: 280px;
 	}
 }
@@ -1211,9 +1221,6 @@
 	.slick-arrow {
 		width: 40px;
 		height: 40px;
-	}
-	.about {
-		padding-top: 40px;
 	}
 	.slider-advantages {
 		padding-bottom: 35px;
