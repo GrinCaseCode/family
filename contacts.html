@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.25" />
+	<link rel="stylesheet" href="css/media.css?ver=1.25" />
+</head>
+<body>
+
+	<div class="wrapper wrapper_page">
+
+		<header class="header default">
+			<div class="container">
+				<div class="header__wrap">
+					<span class="btn_nav">
+						<span class='sandwich'>
+							<span class='sw-topper'></span>
+							<span class='sw-bottom'></span>
+							<span class='sw-footer'></span>
+						</span>
+					</span>
+					<div class="logo-wrap">
+						<a href="#" class="logo">
+							<img src="img/logo.png" alt="alt">
+						</a>
+						<div class="logo-descr">Коттеджный поселок закрытого типа</div>
+					</div>
+					<div class="location-contact">
+						<img src="img/ic_location.png" alt="alt">
+						<div>
+							<p><strong>7 км</strong> от центра Симферополя</p>
+							<a href="#" class="link-simple">Смотреть на карте</a>
+						</div>
+					</div>
+					<div class="time-contact">
+						<p>Режим работы:</p>
+						<p>Пн-Вс с 9:00-21:00</p>
+					</div>
+					<a href="tel:+79785714826" class="phone-mob"><i class="fas fa-phone-alt"></i></a>
+					<div class="phone-contact">
+						<p><a href="tel:+79785714826" class="phone-main">+7 (978) 571-48-26</a></p>
+						<a href="#callback" class="link-simple fancybox">Вам перезвонить?</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<ul class="menu">
+						<li><a href="#">О Family Club</a></li>
+						<li><a href="#">Наши объекты</a></li>
+						<li><a href="#">Карта поселка</a></li>
+						<li><a href="#">Типы планировок</a></li>
+						<li><a href="#">Условия оплаты</a></li>
+						<li><a href="#">Акции и скидки</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="list-social">
+						<li><a href="#" class="list-social__whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+						<li><a href="#" class="list-social__viber"><i class="fab fa-viber"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+			<ul class="breadcumbs">
+				<li><a href="#">Главная</a><span>></span></li>
+				<li><a href="#">Коттеджи 122 м2</a><span>></span></li>
+				<li>Коттедж</li>
+			</ul>
+		</div>
+
+		<div class="contacts">
+			<div class="container">
+				<div class="contacts-block">
+					<div class="row">
+						<div class="col-lg-8">
+							<div id="map-contact-1" class="contact-map"></div>
+						</div>
+						<div class="col-lg-4">
+							<div class="contacts-block__title">Family Club</div>
+							<p>г. Симферополь,</p>
+							<p>ул. Севастопольская, 123</p>
+							<ul class="contacts-block__phones">
+								<li><a href="tel:+79785714826">+7 (978) 571-48-26</a></li>
+								<li><a href="tel:+79785714826">+7 (978) 571-48-26</a></li>
+							</ul>
+							<ul class="list-social list-social_page">
+								<li><a href="#" class="list-social__whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+								<li><a href="#" class="list-social__viber"><i class="fab fa-viber"></i></a></li>
+								<li><a href="#" class="list-social__insta"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#" class="list-social__vk"><i class="fab fa-vk"></i></a></li>
+							</ul>
+							<div class="contacts-block__item">
+								<p>Режим работы:</p>
+								<p>Пн-Вс с 9:00-21:00</p>
+							</div>
+							<div class="contacts-block__item">
+								<p>Почта:</p>
+								<p><a href="mailto:Family_club@mail.ru">Family_club@mail.ru</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-block">
+					<div class="row">
+						<div class="col-lg-8">
+							<div id="map-contact-2" class="contact-map"></div>
+						</div>
+						<div class="col-lg-4">
+							<div class="contacts-block__title">Family Club</div>
+							<p>г. Симферополь,</p>
+							<p>ул. Севастопольская, 123</p>
+							<ul class="contacts-block__phones">
+								<li><a href="tel:+79785714826">+7 (978) 571-48-26</a></li>
+								<li><a href="tel:+79785714826">+7 (978) 571-48-26</a></li>
+							</ul>
+							<ul class="list-social list-social_page">
+								<li><a href="#" class="list-social__whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+								<li><a href="#" class="list-social__viber"><i class="fab fa-viber"></i></a></li>
+								<li><a href="#" class="list-social__insta"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#" class="list-social__vk"><i class="fab fa-vk"></i></a></li>
+							</ul>
+							<div class="contacts-block__item">
+								<p>Режим работы:</p>
+								<p>Пн-Вс с 9:00-21:00</p>
+							</div>
+							<div class="contacts-block__item">
+								<p>Почта:</p>
+								<p><a href="mailto:Family_club@mail.ru">Family_club@mail.ru</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="title-page title-page_consult">Заполните форму и получите консультацию специалиста <span>абсолютно бесплатно!</span></div>
+				<div class="consult-wrap">
+					<div class="block-form block-form_consult">
+						<div class="image-consult">
+							<img src="img/consult.png" alt="alt">
+						</div>
+						<div class="name-consult">Иванов Александр</div>
+						<div class="descr-consult">Ведущий менеджер</div>
+						<a href="tel:+79785714826" class="phone-main">+7 (978) 571-48-26</a>
+						<div class="text-consult">Руководит технической политикой компании. Более 300 проданных объектов разного типа</div>
+					</div>
+					<div class="conslut-block">
+						<div class="title-page">Давайте вместе решим Вашу задачу!</div>
+						<p>Оставьте свой телефон, и я свяжусь с вами в течение 15 минут</p>
+						<form>
+							<div class="item-form">
+								<input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+							</div>
+							<button class="btn-main" type="submit">Позвоните мне</button>
+							<div class="checkbox-wrap">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" required="required" checked="checked" />
+										<span>Согласие на обработку персональных данных</span>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="footer-logo">
+							<a href="#" class="logo">
+								<img src="img/logo.png" alt="alt">
+							</a>
+							<div class="logo-descr">Коттеджный поселок закрытого типа</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6 col_footer-nav">
+						<ul class="footer-list">
+							<li><a href="#">О Family Club</a></li>
+							<li><a href="#">Карта поселка</a></li>
+							<li><a href="#">Наши объекты</a></li>
+							<li><a href="#">Услуги</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-6 col_footer-nav">
+						<ul class="footer-list">
+							<li><a href="#">Условия оплаты</a></li>
+							<li><a href="#">Акции и скидки</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-12">
+						<div class="footer__right">
+							<div>
+								<p><a href="tel:+79785714826" class="phone-main">+7 (978) 571-48-26</a></p>
+								<a href="#callback" class="link-simple fancybox">Вам перезвонить?</a>
+								<p>Режим работы: </p>
+								<p>Пн-Вс с 9:00-21:00</p>
+							</div>
+							<ul class="list-social">
+								<li><a href="#" class="list-social__whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+								<li><a href="#" class="list-social__viber"><i class="fab fa-viber"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3">
+							<a href="#">Политика конфиденциальности</a>
+						</div>
+						<div class="col-lg-2 col_copyright">
+							<p>г. Симферополь © Copyright  2021 г.</p>
+						</div>
+						<div class="col-lg-3">
+							<div class="create">Сделано в <img src="img/copy.svg" alt="alt"></div>
+						</div>
+						<div class="col-lg-4 align_right">
+							<a href="#" class="btn_top"><i class="fa fa-arrow-up"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.25"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+	$(document).ready(function() {
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map('map-contact-1', {
+				center: [44.947453, 34.100632],
+				zoom: 15
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p class="text-map">г. Симферополь, ул. Севастопольская, 123</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin3.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [36, 49],
+				iconImageOffset: [-18, -49],
+				balloonOffset: [ 0, -49 ]
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+		}
+	});
+	$(document).ready(function() {
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map('map-contact-2', {
+				center: [44.947453, 34.100632],
+				zoom: 15
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p class="text-map">г. Симферополь, ул. Севастопольская, 123</p>'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/pin3.png',
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [36, 49],
+				iconImageOffset: [-18, -49],
+				balloonOffset: [ 0, -49 ]
+			});
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark);
+		}
+	});
+</script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
