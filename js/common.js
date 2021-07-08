@@ -175,7 +175,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	});
 
 	$('.slider-nav').slick({
-		arrows: false,
+		arrows: true,
 		dots: false,
 		infinite: true,
 		slidesToShow: 2,

@@ -26,7 +26,7 @@
 	.item-material_4 {
 		left: 640px;
 		top: 604px;
-	}
+	} 
 	.item-material_5 {
 		right: 268px;
 		top: 235px;
@@ -66,6 +66,13 @@
 	.layout-nav__item {
 		width: 155px;
 	}
+	.card__price .btn-main {
+    padding: 0 17px;
+    font-size: 14px;
+}
+.card .right-layout .big-price {
+	font-size: 31px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -229,6 +236,22 @@
 	.item-catalog .line-feature {
 		font-size: 14px;
 	}
+	.card__price {
+		margin-top: 20px;
+		display: block;
+	}
+	.card .right-layout .big-price {
+		margin-bottom: 10px;
+	}
+	.card .slider-nav__item {
+    height: 150px;
+}
+.card .slider-for__item {
+    height: 495px;
+}
+.conslut-block {
+    padding: 33px 35px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -1062,6 +1085,43 @@
 	.about {
 		padding-top: 20px;
 	}
+	.card__left {
+		padding-right: 15px;
+	}
+	.card .right-layout {
+		padding-left: 15px;
+	}
+	.card__price {
+		display: flex;
+		max-width: 600px;
+	}
+	.card .right-layout .big-price {
+		margin-bottom: 0;
+	}
+	.card .tab-container img {
+		margin-top: 20px;
+	}
+	.contacts-block .col-lg-8 {
+		padding-right: 15px;
+	}
+	.contacts-block .col-lg-4 {
+		padding-left: 15px;
+	}
+	.contacts-block__title {
+		margin-top: 20px;
+	}
+	.title-page_consult {
+		padding-top: 0;
+		padding-bottom: 20px;
+		padding-left: 0;
+	}
+	.title-page_consult span {
+		display: inline;
+	}
+	.conslut-block .title-page {
+		font-size: 27px;
+		line-height: 36px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -1215,6 +1275,56 @@
 	.slider-for__item {
 		height: 280px;
 	}
+	.card .slider-for__item {
+    height: 350px;
+}
+.card .right-layout .big-price {
+    font-size: 24px;
+}
+.card .right-layout {
+	padding-right: 15px;
+}
+.card .tab-container {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.card {
+	padding-bottom: 50px;
+}
+.contacts-block__title {
+	margin-bottom: 15px;
+}
+.contacts-block__phones {
+	margin-top: 20px;
+}
+.contacts-block__item {
+	margin-top: 20px;
+}
+.consult-wrap {
+	display: block;
+}
+.consult-wrap .block-form {
+	bottom: 0;
+}
+.conslut-block {
+	border-radius: 15px;
+}
+.conslut-block form {
+	margin-top: 20px;
+}
+.contacts {
+	padding-bottom: 50px;
+}
+.conslut-block .title-page {
+    font-size: 21px;
+    line-height: 29px;
+}
+.contact-map {
+	height: 380px;
+}
+.contacts-block {
+	margin-bottom: 25px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -1411,7 +1521,43 @@
 		background-size: 100% 100%;
 		background-position: center;
 	}
-
+	.card .slider-for__item {
+    height: 285px;
+}
+.card__price {
+	display: block;
+	text-align: center;
+}
+.card .right-layout .big-price {
+	font-size: 27px;
+	margin-bottom: 10px;
+}
+.contacts-block {
+	padding: 15px;
+}
+.contact-map {
+	height: 340px;
+}
+.image-consult {
+	margin-bottom: 15px;
+}
+.block-form_consult {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.descr-consult {
+	margin-bottom: 15px;
+}
+.text-consult {
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 22px;
+}
+.conslut-block {
+	padding: 25px 20px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
 }
 
 
