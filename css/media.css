@@ -1258,7 +1258,11 @@
 .consult-section .conslut-block {
     padding-left: 23px;
     }
+    .footer {
+    	padding-bottom: 32px;
+    }
 }
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
