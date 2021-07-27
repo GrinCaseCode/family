@@ -50,9 +50,9 @@ $(document).ready(function() {
 				appendDots: $controls,
 				responsive: [
 				{
-					breakpoint: 768,
+					breakpoint: 993,
 					settings: {
-						slidesToShow: 1,
+						adaptiveHeight: true
 					}
 				}
 				]
