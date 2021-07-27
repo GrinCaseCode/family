@@ -1,5 +1,65 @@
 $(document).ready(function() {
 
+	/*new pages*/
+	$('.slider-apartment').slick({
+		arrows: true,
+		dots: false,
+		infinite: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		swipe: false,
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+
+	});
+
+	$('.slider-infrastructure').each(function(){
+		var $slider = $(this),
+		$controls = $(".bottom-slider-apartment").find('.controls-slider');
+		if ($slider.length) {
+			var currentSlide;
+			var slidesCount;
+			var sliderCounter = document.createElement('div');
+			sliderCounter.classList.add('slider__counter');
+
+			var updateSliderCounter = function(slick, currentIndex) {
+				currentSlide = slick.slickCurrentSlide() + 1;
+				slidesCount = slick.slideCount;
+				$(sliderCounter).html('<span>0'+currentSlide + '</span> <b>&nbsp;/&nbsp;</b>' +'0'+slidesCount+ '')
+			};
+
+			$slider.on('init', function(event, slick) {
+				$(".bottom-slider-apartment").find(".bottom-slider").append(sliderCounter);
+				updateSliderCounter(slick);
+			});
+
+			$slider.on('afterChange', function(event, slick, currentSlide) {
+				updateSliderCounter(slick, currentSlide);
+			});
+			$slider.slick({
+				dots: false,
+				arrows: true,
+				slidesToShow: 1,	
+				infinite: true,
+				touchThreshold: 1000,
+				slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+				appendArrows: $controls,
+				appendDots: $controls,
+				responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+					}
+				}
+				]
+			});
+		}
+	});
+
 
 //прилипающие меню
 var $menu = $(".header");
@@ -123,6 +183,8 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		}
 		]
 	});
+
+	
 
 	$('.layout-nav').slick({
 		arrows: false,
