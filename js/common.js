@@ -22,6 +22,7 @@ $(document).ready(function() {
 			breakpoint: 992,
 			settings: {
 				slidesToShow: 1,
+				infinite: true,
 				variableWidth: true,
 			}
 		}
@@ -49,6 +50,7 @@ $(document).ready(function() {
 			breakpoint: 992,
 			settings: {
 				slidesToShow: 1,
+				infinite: true,
 				variableWidth: true,
 			}
 		}
