@@ -1310,6 +1310,9 @@
 	.about-history {
 		margin-top: 30px;
 	}
+	.slider-documents {
+		margin: 0 -15px;
+	}
 	.item-document {
 		margin-left: 15px;
 		margin-right: 15px;
